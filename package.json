@@ -1,0 +1,17 @@
+{
+  "name": "aws-cloudformation-password-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Warn: no test specified\" && exit 0",
+    "cfn-lambda-deploy": "node_modules/cfn-lambda/bin/cfn-lambda deploy"
+  },
+  "author": "Mathieu Desvé <mathieu.desve@me.com>",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.5.3",
+    "cfn-lambda": "git+https://github.com/mazerte/cfn-lambda.git",
+    "password-generator": "^2.0.2"
+  }
+}

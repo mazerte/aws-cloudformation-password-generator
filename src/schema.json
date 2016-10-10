@@ -1,0 +1,48 @@
+{
+  "oneOf": [{
+    "type": "object",
+    "required": ["Memorable"],
+    "additionalProperties": false,
+    "properties": {
+      "Memorable": {
+        "type": "string",
+        "enum": ["true", "false"]
+      }
+    }
+  }, {
+    "type": "object",
+    "required": ["Strong"],
+    "additionalProperties": false,
+    "properties": {
+      "Strong": {
+        "type": "string",
+        "enum": ["true", "false"]
+      }
+    }
+  }, {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "Length": {
+        "type": "string",
+        "pattern": "\\d+"
+      },
+      "UppercaseMinCount": {
+        "type": "string",
+        "pattern": "\\d+"
+      },
+      "LowercaseMinCount": {
+        "type": "string",
+        "pattern": "\\d+"
+      },
+      "NumberMinCount": {
+        "type": "string",
+        "pattern": "\\d+"
+      },
+      "SpecialMinCount": {
+        "type": "string",
+        "pattern": "\\d+"
+      }
+    }
+  }]
+}
